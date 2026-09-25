@@ -1,0 +1,14 @@
+{
+  "name": "Triple Music native YuE2 GPU worker",
+  "imageName": "YOUR_REGISTRY/triple-music-worker:YOUR_SOURCE_REVISION",
+  "category": "NVIDIA",
+  "isPublic": false,
+  "isServerless": false,
+  "containerDiskInGb": 25,
+  "volumeInGb": 30,
+  "volumeMountPath": "/workspace",
+  "ports": ["8080/http"],
+  "env": {
+    "TRIPLE_MUSIC_DOWNLOAD_MODELS": "1"
+  }
+}
